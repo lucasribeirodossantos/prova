@@ -1,0 +1,181 @@
+/* Estilo para os botões */
+button, a {
+    font-size: 16px;
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+}
+
+/* Estilo para botões de Login, Cadastro e Carrinho */
+a {
+    background-color: #4CAF50; /* Cor verde */
+    color: white;
+    transition: background-color 0.3s;
+}
+
+a:hover {
+    background-color: #45a049; /* Cor verde mais escura */
+}
+
+/* Estilo para o botão Login */
+a[href*="login"] {
+    background-color: #2196F3; /* Cor azul */
+}
+
+a[href*="login"]:hover {
+    background-color: #0b7dda; /* Azul mais escuro */
+}
+
+/* Estilo para o botão Cadastro */
+a[href*="cadastro"] {
+    background-color: #f44336; /* Cor vermelha */
+}
+
+a[href*="cadastro"]:hover {
+    background-color: #d32f2f; /* Vermelho mais escuro */
+}
+
+/* Estilo para o botão Carrinho */
+a[href*="carrinho"] {
+    background-color: #ff9800; /* Cor laranja */
+}
+
+a[href*="carrinho"]:hover {
+    background-color: #fb8c00; /* Laranja mais escuro */
+}
+
+.botao {
+    display: inline-block; /* Faz os botões ficarem na mesma linha */
+    padding: 10px 20px; /* Espaço interno nos botões */
+    font-size: 16px; /* Tamanho da fonte */
+    text-decoration: none; /* Remove o sublinhado */
+    background-color: #2196F3; /* Cor de fundo */
+    color: white; /* Cor do texto */
+    border: none; /* Remove a borda */
+    border-radius: 5px; /* Bordas arredondadas */
+    margin: 10px 5px; /* Espaço entre os botões */
+    text-align: center; /* Alinha o texto ao centro */
+    cursor: pointer; /* Muda o cursor para mãozinha ao passar o mouse */
+    transition: background-color 0.3s ease; /* Efeito de transição na cor de fundo */
+}
+
+/* Efeito de hover nos botões */
+header .botao:hover {
+    background-color: #1976D2; /* Cor de fundo quando o mouse passa sobre o botão */
+}
+
+/* Estilo para centralizar os botões */
+header {
+    text-align: center; /* Centraliza todo o conteúdo dentro do cabeçalho */
+}
+
+/* Estilo geral para o corpo */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+}
+
+/* Estilo para a navegação */
+header nav {
+    background-color: #333;
+    padding: 10px;
+    text-align: center;
+}
+
+header nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+ul {
+    display: flex; /* Usando Flexbox */
+    flex-wrap: wrap; /* Permite que os itens que não cabem na linha se movam para a próxima linha */
+    justify-content: center; /* Centraliza os itens na linha */
+    gap: 20px; /* Espaço entre os produtos */
+    list-style-type: none; /* Remove os marcadores da lista */
+    padding: 0;
+}
+
+/* Estilo para cada produto */
+li {
+    display: flex;
+    flex-direction: column; /* Coloca a imagem e o nome do produto em uma coluna */
+    align-items: center; /* Alinha os itens no centro */
+    width: 200px; /* Largura fixa para cada produto */
+    text-align: center; /* Alinha o texto no centro */
+    padding: 10px; /* Espaço interno */
+    border: 1px solid #ddd; /* Borda leve ao redor de cada produto */
+    border-radius: 10px; /* Bordas arredondadas */
+    background-color: #fff; /* Fundo branco para os produtos */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    transition: transform 0.3s ease; /* Efeito de transição ao passar o mouse */
+}
+
+/* Efeito ao passar o mouse sobre o produto */
+li:hover {
+    transform: translateY(-5px); /* Levanta o item ligeiramente */
+}
+
+/* Estilo para as imagens dos produtos */
+img {
+    width: 100%; /* Faz a imagem ocupar toda a largura do item */
+    max-width: 200px; /* Limita a largura máxima da imagem */
+    height: 200px; /* Define a altura das imagens */
+    object-fit: cover; /* Garante que a imagem cubra a área sem distorção */
+    border-radius: 10px; /* Bordas arredondadas */
+    margin-bottom: 10px; /* Espaço abaixo da imagem */
+}
+
+/* Estilo para os links de produtos */
+a {
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+    display: block; /* Faz o link ocupar toda a largura disponível */
+    margin-top: 10px; /* Espaço entre a imagem e o nome */
+}
+
+/* Efeito de hover no título */
+a:hover {
+    color: #2196F3; /* Muda a cor do título ao passar o mouse */
+}
+
+.produto {
+    display: inline-block;
+    width: 200px;
+    margin: 10px;
+    text-align: center;
+  }
+  
+  .imagem-produto {
+    width: 100%;
+    height: auto;
+  }
+  
+  .botao-adicionar {
+    background-color: #4CAF50; /* Cor verde */
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    width: 100%;
+  }
+  
+  .botao-adicionar:hover {
+    background-color: #45a049; /* Cor mais escura ao passar o mouse */
+  }
+  

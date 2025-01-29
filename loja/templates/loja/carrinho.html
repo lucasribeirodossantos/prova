@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Carrinho</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'loja/css/style.css' %}" />
+  </head>
+  <body>
+    <h1>Seu Carrinho</h1>
+    <ul>
+      {% if produtos %}
+        {% for produto in produtos %}
+          <li>{{ produto.nome }} - R$ {{ produto.preco }}</li>
+        {% endfor %}
+      {% else %}
+        <li>Seu carrinho está vazio.</li>
+      {% endif %}
+    </ul>
+  </body>
+</html>

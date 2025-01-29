@@ -1,0 +1,25 @@
+<!-- loja/templates/loja/cadastro.html -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Cadastro</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'loja/css/style.css' %}" />
+  </head>
+  <body>
+    <h1>Cadastro</h1>
+    <form method="POST">
+      {% csrf_token %}
+      {{ form.as_p }}
+      <button type="submit">Cadastrar</button>
+    </form>
+    <a href="{% url 'login' %}">Já tem uma conta? Faça login!</a>
+    {% if messages %}
+      <ul class="messages">
+        {% for message in messages %}
+          <li>{{ message }}</li>
+        {% endfor %}
+      </ul>
+    {% endif %}
+  </body>
+</html>
